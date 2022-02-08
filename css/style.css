@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 22px;
+}
+body {
+    font-size: 17px;
+    font-family: 'Sarabun', sans-serif;
+}
