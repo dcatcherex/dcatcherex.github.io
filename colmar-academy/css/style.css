@@ -1,0 +1,96 @@
+section{
+}
+
+
+.bg-gray{
+   background-color: #d8d8d8; 
+}
+
+.bg-gray-light{
+    background-color: #EAEBEC;
+}
+
+.bg-white{
+    background-color: #f3f5f5;
+}
+
+.bt-color{
+    background-color: #4a4a4a;
+    color: #f3f5f5;
+    border-radius: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.font-color{
+    color: #4a4a4a;
+}
+
+.font-color-light{
+    color: #767676;
+    
+}
+
+h1,h2,h3,h4,h5,h6,body{
+    color: #4a4a4a;
+}
+
+/* h3{
+    margin-top: 32px;
+    margin-bottom: 32px;
+} */
+
+.pad-top32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.pad-top8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pad-side24{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.pad-side72{
+    padding-left: 72px;
+    padding-right: 72px; 
+}
+
+.pad16{
+    padding: 16px;
+}
+
+.pad-side0{
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.pad-top0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.link-no-under {
+    text-decoration: none;
+    color: #4E93E2;
+}
+
+.mar0{
+    margin: 0px;
+}
+
+.mar-bottom32{
+    margin-bottom: 32px;
+}
+
+.card{
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
