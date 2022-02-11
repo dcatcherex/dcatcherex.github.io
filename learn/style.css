@@ -1,0 +1,25 @@
+/*  */
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow:row wrap;
+}
+
+.navigation{
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-end;
+}
+
+@media all and (max-width: 800px) {
+    .navigation{
+    justify-content: space-between;}
+}
