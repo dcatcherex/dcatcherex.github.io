@@ -1,8 +1,16 @@
 /*  */
+header{
+    --border-width: 5px;
+}
+
+.border{
+    border: var(--border-width) solid blue;
+}
+
+
 body{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    padding: 0px;
+    margin: 0px;
     
 }
 
@@ -22,4 +30,19 @@ body{
 @media all and (max-width: 800px) {
     .navigation{
     justify-content: space-between;}
+}
+
+section{
+    padding: 20px;
+    min-height: 50vh;
+    margin: 0px;
+    background-color: antiquewhite;
+}
+
+div{
+    padding: 10px;
+    min-height: 25vh;
+    min-width: 25vh;
+    background-color: aquamarine;
+    color: blueviolet;
 }
