@@ -8,5 +8,5 @@ function askMyName(){
 
 function helloWorld(){
     const h1message = document.getElementById("myname").innerHTML;
-    alert(h1message + "งานท่วมหัว ทำตัว slowlife");
+    alert(h1message + " งานท่วมหัว ทำตัว slowlife");
 }
