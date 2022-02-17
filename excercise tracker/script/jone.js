@@ -1,0 +1,3 @@
+function getAlert(){
+    alert('Congrat');
+}

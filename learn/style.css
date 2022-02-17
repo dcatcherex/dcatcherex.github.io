@@ -1,6 +1,33 @@
 /*  */
-header{
-    --border-width: 5px;
+html{
+    --color: orange;
+    --border-width: 10px;
+    --brand-color: red;
+    --max-reading-length: 70ch;
+    --transparent-black: rgba(0, 0, 0, 0.5);
+}
+
+button{
+    --h:100;
+    --s:50%;
+    --l:50%;
+    --a:1;
+}
+
+/*  */
+button:hover{ 
+    --l: 75%;
+}
+button:focus{
+    --s: 75%;
+}
+button:disabled{
+    --s: 0%;
+    --a: 0.5;
+}
+
+h1{
+    color: var(--color);
 }
 
 .border{

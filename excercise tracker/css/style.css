@@ -1,0 +1,254 @@
+/*  */
+*{
+    padding: 0px;
+    margin: 0px;
+    outline-style: none;
+  
+}
+
+html{
+    --color: orange;
+    --color-border: #79BAFF;
+    --color-text:#37485B;
+    --border-width: 10px;
+    --brand-color: red;
+    --max-reading-length: 70ch;
+    --transparent-black: rgba(0, 0, 0, 0.5);
+
+    --logo:
+    
+    /* responsive size */
+    --mobile-size: 480px;
+    --tablet-size: ;
+    --desktop-size: 1100px;
+
+    /* color theme1 */
+
+    /* color theme2 */
+
+
+}
+
+body{
+    background-color: bisque;
+    font-size: 16px;
+    font-weight:400;
+}
+
+
+
+button{
+    --h:100;
+    --s:50%;
+    --l:50%;
+    --a:1;
+}
+
+/*  */
+button:hover{ 
+    --l: 75%;
+}
+button:focus{
+    --s: 75%;
+}
+button:disabled{
+    --s: 0%;
+    --a: 0.5;
+}
+
+
+
+.super{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container{
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+.card {
+    
+    background-color: white;
+    /* Add shadows to create the "card" effect */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    max-width: 200px;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin: 24px 24px;
+    padding: 10px;
+  }
+
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    margin-bottom: 5px;
+    border: 10px solid var(orange);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .card:hover img{
+    transition: 0.3s;
+    margin-top: -10px;
+
+  }
+  
+  /* Add some padding inside the card container */
+  .card-container {
+    padding: 2px 16px;
+  }
+
+
+
+h1{
+    color: var(--color);
+}
+
+.border{
+    border: var(--border-width) solid blue;
+}
+
+
+
+/* Labtop/Desktop  */
+@media screen 
+    and (min-width: 1200px) 
+    and (max-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    
+} 
+/* iPad10.5  */
+@media only screen 
+    and (min-width: 834px) 
+    and (max-width: 1112px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        body{
+            background-color: #2196F3;
+        }
+
+}
+
+/* iphone7+  */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+        body{
+            background-color: cadetblue;
+        }
+        .card{
+            background-color: #2196F3;
+        }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+}
+
+input[type=text]{
+  border-style: ridge;
+  border-radius: 15px;
+  color: var(--color-text);
+}
+
+input[type=text]:focus {
+  border: 2px solid var(--color-border);
+}
+
+input{
+  border-color: blueviolet;
+  padding: 5px;
+  margin: 5px;
+  border: 0px;
+}
+
+input:hover{
+
+  border: 2px solid var(--color-border); 
+}
+
+button{
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 4px;
+  position: relative;
+}
+.button-in {
+  width: 300px;
+  position: relative;
+}
+
+#clear {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+}
