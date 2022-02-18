@@ -1,4 +1,15 @@
 /*  */
+:root
+:root.light {
+  --bg-color: #fff;
+  --text-color: #123;
+}
+ 
+:root.dark {
+  --bg-color: #121212;
+  --text-color: #45ADFE;
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -7,6 +18,8 @@
 }
 
 html{
+  
+
     --color: orange;
     --color-border: #79BAFF;
     --color-text:#37485B;
@@ -23,6 +36,7 @@ html{
     --desktop-size: 1100px;
 
     /* color theme1 */
+
 
     /* color theme2 */
 
@@ -250,5 +264,5 @@ button{
   position: absolute;
   top: 0px;
   right: 0px;
-
+  color: var(--bg-color)
 }
