@@ -1,11 +1,49 @@
+body{
+    margin: 0px;
+
+} 
+
+
+
 .container{
-    width: 50%;
-    max-width: 500px;
+    width: 95%;
+    max-width: 950px;
     margin: 0 auto;
-    border: 2px solid violet;
+    border: 5px solid violet;
+
+}
+
+.column{
+    display: flex;
+    border: 2px solid lightcoral;
+
+}
+
+
+.col-1{
+    
+}
+
+.col-2{
+    
+}
+
+.col-3{
 
 }
 
 img{
     width: 100%;
+}
+
+@media (min-width: 400px) {
+    body{
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 650px) {
+    body{
+        background-color: burlywood;
+    }
 }
