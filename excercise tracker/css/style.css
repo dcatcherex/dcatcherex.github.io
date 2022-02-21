@@ -18,7 +18,7 @@
 }
 
 html{
-  
+  font-size: 16px;
 
     --color: orange;
     --color-border: #79BAFF;
@@ -44,7 +44,7 @@ html{
 }
 
 body{
-    background-color: bisque;
+    /* background-color: bisque; */
     font-size: 16px;
     font-weight:400;
 }
@@ -75,12 +75,17 @@ button:disabled{
 .super{
     display: flex;
     justify-content: space-between;
+  background-color: #F2F2F2;
+
 
 }
 
 .container{
+  margin: 0 auto;
+  max-width: 1100px ;
     display: flex;
     flex-flow: wrap;
+    
 }
 
 
@@ -93,32 +98,66 @@ button:disabled{
     transition: 0.3s;
     border-radius: 8px;
     margin: 24px 24px;
+  }
+
+  .card img{
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card-content{
     padding: 10px;
+  }
+
+  .card-date{
+    text-align: center;
+    font-family: 'kanit', sans-serif;
+    font-size: .8em;
+    color: #FC7555;
+  }
+
+  .card-title{
+    text-align: center;
+    margin-bottom: .5em;
+  }
+
+  .card-detail{
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.5);
   }
 
   
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    margin-bottom: 5px;
+    transform: scale(1.1);
     border: 10px solid var(orange);
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
-
+/* 
   .card:hover img{
-    transition: 0.3s;
-    margin-top: -10px;
 
-  }
+  } */
   
   /* Add some padding inside the card container */
   .card-container {
     padding: 2px 16px;
   }
+  
+  .card-stats{
+    background-color: #2196F3;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+  }
 
+  .stat{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    border-left: 2px solid white;
+  }
 
 
 h1{
     color: var(--color);
+    
 }
 
 .border{
@@ -158,6 +197,7 @@ h1{
         }
 }
 
+/* toggle switch */
 .switch {
     position: relative;
     display: inline-block;
@@ -266,3 +306,78 @@ button{
   right: 0px;
   color: var(--bg-color)
 }
+
+h1,h2,h3,h4,nav ul{
+  font-family: 'Kanit',sans-serif;
+  color: #37485B;
+}
+
+h1{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1.1rem;
+}
+
+header .site-title{
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+nav ul{
+  /* border: 1px solid magenta; */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li{
+
+  /* border: 1px dotted orange; */
+  padding: 0 1em;
+}
+
+nav a{
+  padding: 0.5em 0;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+nav a:hover,
+nav a:focus{
+  transition: .1s ;
+
+ 
+  color:#718CA9;
+  border-bottom: 3px solid #718CA9;
+}
+nav a:visited{
+}
+
+.active-page:visited{
+  /* color: #718CA9; */
+}
+
+.menu-container{
+  box-shadow: 0px 150px;
+}
+
+header img{
+  max-width: 340px;
+}
+
+.card-stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #123; */
+}
+
+

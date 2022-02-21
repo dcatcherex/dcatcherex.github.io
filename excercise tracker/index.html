@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- google analytic -->
+    
     <title>iTRACK</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <header>
+    <div class="site-title">
+      <img src="./images/logo.png" alt="">
+    </div>
+  </header>
 
 <!-- Menu -->
 <nav>
     <div class="menu-container">
+
+      <ul>
+        <li><a href="./index.html" class="active-page">HOME</a></li>
+        <li><a href="./add-activity.html"class="active-page">ADD ACTIVITIES</a></li>
+        <li><a href="./list-activity.html"class="active-page">LIST ACTIVITIES</a></li>
+        <li><a href="./add-activity.html"class="active-page">BLOG</a></li>
+        <li><a href="./add-activity.html"class="active-page">CONTACT US</a></li>
+      </ul>
 
     </div>
 
@@ -26,96 +47,59 @@
 
 </main>
 
-<!-- cards -->
+
 
 <!-- Rounded switch -->
-<label class="switch">
+<!-- <label class="switch">
     <input type="checkbox">
     <span class="slider round"></span>
-  </label>
+  </label> -->
 
+
+  <!-- cards -->
 <section class="super">
 <div class="container">
     
     <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
+        <img src="./images/activities/bicycle1.jpg" alt="Avatar" style="width:100%">
+        <div class="card-content">
+          <p class="card-date">15 กุมภา 65</p>
+          <h4 class="card-title"><b>พาน้องเพื่อนขี่รถเล่น</b></h4>
+          <p class="card-detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      
+        <div class="card-stats">
+          <div class="stat">
+            <div class="value">151</div>
+          </div>
+          <div class="stat">
+            <div class="value">1 hr 20 m</div>
+            <!-- <div class="type">151</div> -->
+          </div>
+          <div class="stat">
+            <div class="value">151</div>
+          </div>
+        </div>
+
+    </div> <!-- end of card -->
+
+
+    <div class="card">
+        <img src="./images/activities/execer1.jpg" alt="Avatar" style="width:100%">
+        <div class="card-detail">
+          <h4 class="car"><b>John Doe</b></h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
         </div>
     </div>
 
     <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
+        <img src="./images/activities/execer2.jpg" alt="Avatar" style="width:100%">
         <div class="container">
           <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
         </div>
     </div>
 
-    <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img class="hover-image" src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="./resources/itrack logo.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-    </div>
 
 </div>
 </section>

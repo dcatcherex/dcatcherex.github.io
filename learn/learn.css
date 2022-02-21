@@ -36,14 +36,52 @@ img{
     width: 100%;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 600px) {
     body{
         background-color: aqua;
     }
-}
 
-@media (min-width: 650px) {
-    body{
-        background-color: burlywood;
+    .column {
+        flex-direction: column;
+    };
+    .col-1{
+        width:20%;
+    }
+    .col-2{
+        width:45%;
+    }
+    .col-3{
+        width:40%;
     }
 }
+@media (max-width: 1100) {
+    
+    body{
+        background-color: cadetblue;
+    }
+}
+
+nav ul{
+    border: 1px solid magenta;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    border: 1px dotted orange;
+    
+}
+
+ol>li{
+    display: table;
+}
+
+
+ol{
+    counter-reset: item;
+}
+li{
+    display: block;
+}
+
+li:before { content: counters(item,".") " "; counter-increment: item}
